@@ -1,78 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My eBay Skin Website</title>
+    <title>eBay Open Source Features</title>
     <!-- Link to eBay Skin CSS -->
-    <link rel="stylesheet" href="css/skin.min.css">
-    <style>
-        /* Optional: Custom styles to add some spacing */
-        body {
-            padding: 20px;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="skin.min.css">
 </head>
-<body>
 
-    <!-- Navigation Bar -->
+<body>
+    <!-- Navigation bar using eBay Skin -->
     <nav class="navbar">
         <div class="navbar__content">
-            <a class="navbar__brand" href="#">MyWebsite</a>
+            <a class="navbar__brand" href="#">This is a navigation bar</a>
             <ul class="navbar__menu">
                 <li class="navbar__item"><a class="navbar__link" href="#">Home</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">About</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#">Services</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Projects</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Docs</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <header>
-        <h1>Welcome to My Website!</h1>
-        <p>This is a simple website using eBay Skin components.</p>
-        <button class="btn btn--primary">Get Started</button>
+    <!-- Main header section -->
+    <header class="hero hero--primary">
+        <div class="hero__content">
+            <h1>This is header 1</h1>
+            <p>This is paragraph 1.</p>
+            <button class="btn btn--primary">Get Started</button>
+        </div>
     </header>
 
+    <!—This is a comment -->
     <main>
-        <h2>Featured Items</h2>
-        <div class="card">
-            <div class="card__content">
-                <h3 class="card__title">Item 1</h3>
-                <p class="card__description">This is a description of item 1. It's a great product!</p>
-                <button class="btn btn--secondary">Learn More</button>
-            </div>
-        </div>
+        <section class="section">
+            <h2 class="section__title">This is a section</h2>
 
-        <div class="card">
-            <div class="card__content">
-                <h3 class="card__title">Item 2</h3>
-                <p class="card__description">This is a description of item 2. It's even better!</p>
-                <button class="btn btn--secondary">Learn More</button>
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card__content">
+                    <h3 class="card__title">This is a card</h3>
+                    <p class="card__description">
+                        This is a card description.
+                    </p>
+                    <a class="btn btn--secondary" href="https://cards.com" target="_blank">Learn More</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="card__content">
-                <h3 class="card__title">Item 3</h3>
-                <p class="card__description">This is a description of item 3. Don't miss out!</p>
-                <button class="btn btn--secondary">Learn More</button>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card__content">
+                    <h3 class="card__title">This is another card</h3>
+                    <p class="card__description">
+                        Card description.
+                    </p>
+                    <a class="btn btn--secondary" href="https://github.com/eBay/link" target="_blank">This is a link</a>
+                </div>
             </div>
-        </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card__content">
+                    <h3 class="card__title">this is another card</h3>
+                    <p class="card__description">
+                        Card description.
+                    </p>
+                    <a class="btn btn--secondary" href="https://opensource.ebay.com/skin/" target="_blank">This is a link</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Features of eBay Skin -->
+        <section class="section">
+            <h2 class="section__title">This is a section</h2>
+            <ul class="list">
+                <li class="list__item">
+                    <strong>Responsive Design:</strong> This is a list item.
+                </li>
+                <li class="list__item">
+                    <strong>This is a list item.
+                </li>
+                <li class="list__item">
+                    <strong>Consistent UI:</strong> This is a list item.
+                </li>
+                <li class="list__item">
+                    <strong>Easy Integration:</strong> And another list item.
+                </li>
+            </ul>
+        </section>
     </main>
 
+    <!-- Footer section -->
     <footer class="footer">
-    <p>&copy; 2024 MyWebsite. All rights reserved.</p>
-    <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
-        <li class="footer__item"><a class="footer__link" href="#">Terms of Service</a></li>
-    </ul>
-</footer>
-
-
+        <div class="footer__content">
+            <p>&copy; This is the footer. All rights reserved.</p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-</html>
 
+</html>
